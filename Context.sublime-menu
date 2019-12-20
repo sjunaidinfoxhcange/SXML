@@ -1,0 +1,11 @@
+[
+    { "command": "toggle_readonly", "caption": "Toggle Readonly", "id": "end" },
+    { "command": "make_readonly", "caption": "Make Readonly", "id": "end" },
+    { "command": "run_multiple_commands", "caption": "Run Multiple Commands", "id": "end" },
+    { "command": "open_fileonly",  "args": { "fname": },"caption": "Open File"}
+
+
+    
+    
+]
+

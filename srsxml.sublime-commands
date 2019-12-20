@@ -1,0 +1,6 @@
+[
+	{ "caption": "Open Fileonly", "command": "open_fileonly" },
+	{ "caption": "Toggle Readonly", "command": "toggle_readonly" },
+	{ "caption": "Run Multiple Commands", "command": "run_multiple_commands" }
+
+]

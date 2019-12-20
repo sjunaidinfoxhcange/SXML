@@ -1,0 +1,32 @@
+{
+	"scope": "text.xml",
+	"completions": [
+		{
+			"trigger": "Note Start",
+			"contents": "<SRS_NOTE_GRID> <REFGRID> <!--CLOSE TAGS--> "
+		},
+		{
+				"trigger": "Note End",
+				"contents": "</REFGRID></SRS_NOTE_GRID"
+		},
+		{
+				"trigger": "Javascript Insert",
+				"contents": "//JS_START \n\n\n//please enter body of your script\n\n\n\n\n//JS_END"
+		},
+
+		{
+				"trigger": "MSSQL Insert",
+				"contents": "--MSSQL_START \n\n\n--please enter body of your Micsrosft SQL script\n\n\n\n\n--MSSQL_END"
+		},
+		{
+				"trigger": "PostGreSQL Insert",
+				"contents": "--PGSQL_START \n\n\n--please enter body of your PostGreSQL script\n\n\n\n\n--PGSQL_END"
+		},
+		{
+				"trigger": "Insert Sample Text",
+				"command": "open_file",
+				//"contents": "${packages}SRSXML/resources/sample.xml",
+				"args": {"file": "${packages}/SRSXML/srs.sublime-settings"}
+		}
+	]
+}

@@ -1,0 +1,124 @@
+[
+    {
+        "caption": "SRS",
+        "mnemonic": "n",
+        "id": "SRS Tools",
+        "children":
+        [
+            {
+                "caption": "SRS Tools",
+                "mnemonic": "P",
+                "id": "tools",
+                "children":
+                [
+                    {
+                        "caption": "BI Reports",
+                        "children":
+                        [
+                            
+                                { 
+
+                                "caption": "Report Example", 
+                                "command": "open_fileonly", "args":{
+                                    "fname": "${packages}/SQLTools/Default ($platform).sublime-keymap",
+                                    "ff":"Default ($platform).sublime-keymap"
+
+                                }
+
+
+                                
+                                 
+
+                              },
+                              {
+                                "caption": "List Example",
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/SQLTools/SQLTools.sublime-settings",
+                                    "default": "// Settings in here override those in \"SQLTools/SQLTools.sublime-settings\"\n{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "DSS Example",
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/SQLTools/Default ($platform).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            },
+                            {
+                                "caption": "NDIS Example",
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/SQLTools/Default ($platform).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Note Layout",
+                        "children":
+                        [
+                            {
+                                "caption": "Connections",
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/SQLTools/SQLToolsConnections.sublime-settings",
+                                    "default": "// List all your connections to DBs here\n{\n\t\"connections\": {\n\t\t$0\n\t},\n\t\"default\": null\n}"
+                                }
+                            },
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/SQLTools/SQLTools.sublime-settings",
+                                    "default": "// Settings in here override those in \"SQLTools/SQLTools.sublime-settings\"\n{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "Key Bindings",
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/SQLTools/Default ($platform).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Grid Layout",
+                        "children":
+                        [
+                            {
+                                "caption": "Connections",
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/SQLTools/SQLToolsConnections.sublime-settings",
+                                    "default": "// List all your connections to DBs here\n{\n\t\"connections\": {\n\t\t$0\n\t},\n\t\"default\": null\n}"
+                                }
+                            },
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/SQLTools/SQLTools.sublime-settings",
+                                    "default": "// Settings in here override those in \"SQLTools/SQLTools.sublime-settings\"\n{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "Key Bindings",
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/SQLTools/Default ($platform).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            }
+                        ]
+                    },
+
+                ]
+            }
+        ]
+    }
+]

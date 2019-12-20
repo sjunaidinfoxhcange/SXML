@@ -1,0 +1,46 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+
+name: SRS XML
+file_extensions:
+ - XML
+scope: text.XML
+
+contexts:
+  main:
+    - match: ""
+      push: "Packages/XML/XML.sublime-syntax"
+      with_prototype:
+
+        - match: ' *--PGSQL_START *'
+          push: Packages/SRSXML/PSQL/PostgreSQL.tmLanguage
+          with_prototype:
+            - match: '(?= *--PGSQL_END *)'
+              pop: true
+
+        - match: ' *--MSSQL_START *'
+          push: Packages/SQL/SQL.sublime-syntax
+          with_prototype:
+            - match: '(?= *--MSSQL_END *)'
+              pop: true
+
+        - match: '< *zscript *>'
+          push: Packages/Java/Java.sublime-syntax
+          with_prototype:
+            - match: '(?=</ *zscript *>)'
+              pop: true
+
+        - match: ' *//JS_START *'
+          push: Packages/JavaScript/JavaScript.sublime-syntax
+          with_prototype:
+            - match: '(?= *//JS_END *)'
+              pop: true
+
+        - match: '< *style *>'
+          push: Packages/CSS/CSS.sublime-syntax
+          with_prototype:
+            - match: '(?=</ *style *>)'
+              pop: true
+
+       
